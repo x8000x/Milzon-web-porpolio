@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="tailwind-engine.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-[#0b0f1a] text-slate-300 antialiased">
+  
+  <nav class="sticky top-0 z-50 w-full bg-slate-900/80 backdrop-blur-md border-b border-white/10 md:py-4 py-2 transition-transform duration-300 ease-in-out">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+      <div class="text-white font-black text-5xl tracking-tighter italic">Milzon Coyne</div>
+      <ul class="hidden md:flex gap-8 items-center">
+        <li><a href="#home" class="text-white hover:text-blue-500 transition">Home</a></li>
+        <li><a href="#projects" class="text-white hover:text-blue-500 transition">Projects</a></li>
+        <li><a href="#skills" class="text-white hover:text-blue-500 transition">Skills</a></li>
+      </ul>
+      <button onclick="toggleMenu()" class="md:hidden text-white text-2xl"> <i class="fa-solid fa-bars"></i> </button>
+    </div>
+    
+    <div id="mobileMenu" class="hidden gap-4 text-white md:hidden">
+      <ul class="flex flex-col pt-3 ps-4 gap-8 text-white border-t border-white/10 md:hidden pb-4">
+        <li><a href="#home" class="text-white">Home</a></li>
+        <li><a href="#projects" class="text-white">Projects</a></li>
+        <li><a href="#skills" class="text-white">Skills</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="mx-8 rounded-2xl my-2 min-h-screen flex flex-col md:flex-row items-center justify-center p-6 bg-white gap-10">
+    <div class="h-auto w-full flex justify-center overflow-hidden rounded-2xl">
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    poster="images/4181.png" 
+    class="max-w-full h-auto  object-cover"
+  >
+    <source src="images/4214.mp4" type="video/mp4">
+    <img src="images/4181.png" alt="Profile Illustration">
+  </video>
+</div>
+    
+    <div class="text-center max-w-4xl">
+      <h2 class="text-blue-400 font-mono tracking-widest uppercase text-sm mb-4">
+        Software Development Student
+      </h2>
+    
+      <h1 class="text-black text-2xl md:text-5xl font-black tracking-tighter leading-none mb-6">
+        Aspiring <br class="hidden md:block"> 
+        <span class="text-8xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+          Full-Stack Developer
+        </span>
+      </h1>
+
+      <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">My Name is <span class="text-black font-bold">Milzon Coyne</span> and I am
+        developing a foundation in <span class="text-blue-500 font-bold">Python</span> logic, exploring web backends with
+        <span class="text-blue-500 font-bold">PHP & CodeIgniter</span>, and styling responsive UIs with <span class="text-blue-500 font-bold">Tailwind CSS</span>. 
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#projects" class="group px-8 py-4 bg-black border-double border-2 text-white font-bold rounded-full hover:bg-red-500 hover:text-black transition-all duration-300 flex items-center">
+          View My Projects
+          <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      
+        <a href="#contact" class="px-8 py-4 border border-slate-700 text-black font-bold rounded-full hover:bg-black hover:text-white transition-all">
+          Let's Connect
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <section id="projects" class="py-20 px-6 bg-[#0b0f1a]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-black text-white mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+        Portfolio Showcase
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        <a href="#ecomx-detail" class="group relative aspect-video md:aspect-square overflow-hidden rounded-3xl border border-white/10 hover:border-blue-500/50 transition-all duration-500 shadow-2xl">
+          <img src="images/4196.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60 group-hover:opacity-100">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6">
+            <h3 class="text-2xl font-black text-white group-hover:text-blue-400 transition-colors">ECOMX</h3>
+            <p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Web Admin Panel</p>
+          </div>
+        </a>
+
+        <a href="#nomnom-detail" class="group relative aspect-video md:aspect-square overflow-hidden rounded-3xl border border-white/10 hover:border-orange-500/50 transition-all duration-500 shadow-2xl">
+          <img src="images/4201.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60 group-hover:opacity-100">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6">
+            <h3 class="text-2xl font-black text-white group-hover:text-orange-400 transition-colors">Nom Nom</h3>
+            <p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Python Game</p>
+          </div>
+        </a>
+
+        <a href="#godot-detail" class="group relative aspect-video md:aspect-square overflow-hidden rounded-3xl border border-white/10 hover:border-emerald-500/50 transition-all duration-500 shadow-2xl">
+          <img src="images/4207.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60 group-hover:opacity-100">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6">
+            <h3 class="text-2xl font-black text-white group-hover:text-emerald-400 transition-colors">Godot Game</h3>
+            <p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">GdScript Engine</p>
+          </div>
+        </a>
+      </div>
+      
+ <div id="ecomx-detail" class="pt-20 mb-32 border-t border-white/5 scroll-mt-24">
+      <div class="flex flex-col md:flex-row gap-12 items-center">
+        <div class="relative group rounded-3xl overflow-hidden bg-slate-800 shadow-2xl w-full md:w-3/5 border border-white/10">
+          <img id="ecomx-display" src="images/4196.png" class="w-full h-auto min-h-[400px] object-contain transition-all duration-500">
+      
+          <div class="absolute bottom-6 left-1/2 -translate-x-1/2 p-2 bg-black/60 backdrop-blur-md rounded-2xl flex gap-2 border border-white/10 z-10">
+            <img src="images/4196.png" onclick="changeImage('ecomx', 'images/4196.png')" class="w-14 h-14 rounded-lg cursor-pointer hover:scale-110 transition border border-white/20 object-cover">
+            <img src="images/4197.png" onclick="changeImage('ecomx', 'images/4197.png')" class="w-14 h-14 rounded-lg cursor-pointer hover:scale-110 transition border border-transparent object-cover">
+            <img src="images/4198.png" onclick="changeImage('ecomx', 'images/4198.png')" class="w-14 h-14 rounded-lg cursor-pointer hover:scale-110 transition border border-transparent object-cover">
+            <img src="images/4199.jpg" onclick="changeImage('ecomx', 'images/4199.jpg')" class="w-14 h-14 rounded-lg cursor-pointer hover:scale-110 transition border border-transparent object-cover">
+          </div>
+        </div>
+   
+        <div class="w-full md:w-2/5">
+         <span class="text-blue-400 font-mono text-sm tracking-widest uppercase">E-Commerce Admin Panel</span>
+         <h2 class="text-4xl font-black text-white mt-2 mb-6">ECOMX</h2>
+         <span class="text-blue-400 font-mono text-sm tracking-widest uppercase">MVC architecture<br>CodeIgniter<br>PHP | Html | Js | CSS</span>
+       
+         <p>
+           <br> I developed an admin system that features secure authentication through password hashing alongside an interactive panel. It implements generated reports and analytics, plus full CRUD functionality for inventory and orders, great ux with the help of APIs like OpenStreetMap and FontAwesome.
+        `</p>
+       </div>
+      </div>
+    </div>
+
+      <div id="nomnom-detail" class="pt-20 border-t border-white/5 scroll-mt-24">
+        <div class="flex flex-col md:flex-row gap-12 items-center">
+          <div class="w-full md:w-2/5 order-2 md:order-1">
+            <span class="text-orange-400 font-mono text-sm tracking-widest uppercase">Python Development</span>
+            <h2 class="text-4xl font-black text-white mt-2 mb-6">Nom Nom Game</h2>
+            <p class="text-slate-400 leading-relaxed">
+              A 2D game developed using Pygame. I implemented efficient game loops and collision logic to manage spawning food and obstacles.
+            </p>
+          </div>
+          <div class="relative group rounded-3xl overflow-hidden bg-slate-900 shadow-2xl w-full md:w-3/5 border border-white/10 order-1 md:order-2">
+            <img id="nomnom-display" src="images/4201.jpg" class="w-full h-auto max-h-[600px] object-contain mx-auto transition-all duration-500">
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 p-2 bg-black/60 backdrop-blur-md rounded-2xl flex gap-2 border border-white/10 z-10">
+              <img src="images/4201.jpg" onclick="changeImage('nomnom', 'images/4201.jpg')" class="w-14 h-14 rounded-lg cursor-pointer hover:scale-110 transition border border-white/20 object-cover">
+              <img src="images/4200.jpg" onclick="changeImage('nomnom', 'images/4200.jpg')" class="w-14 h-14 rounded-lg cursor-pointer hover:scale-110 transition border border-transparent object-cover">
+              <img src="images/4202.jpg" onclick="changeImage('nomnom', 'images/4202.jpg')" class="w-14 h-14 rounded-lg cursor-pointer hover:scale-110 transition border border-transparent object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div id="godot-detail" class="pt-20 mb-32 border-t border-white/5 scroll-mt-24">
+      <div class="flex flex-col md:flex-row gap-12 items-center">
+        <div class="relative group rounded-3xl overflow-hidden bg-slate-800 shadow-2xl w-full md:w-3/5 border border-white/10">
+          <img id="godot-display" src="images/4207.jpg" class="w-full h-auto min-h-[400px] object-contain transition-all duration-500">
+      
+          <div class="absolute bottom-6 left-1/2 -translate-x-1/2 p-2 bg-black/60 backdrop-blur-md rounded-2xl flex gap-2 border border-white/10 z-10">
+            <img src="images/4207.jpg" onclick="changeImage('godot', 'images/4207.jpg')" class="w-14 h-14 rounded-lg cursor-pointer hover:scale-110 transition border border-white/20 object-cover">
+            <img src="images/4206.jpg" onclick="changeImage('godot', 'images/4206.jpg')" class="w-14 h-14 rounded-lg cursor-pointer hover:scale-110 transition border border-transparent object-cover">
+       
+            </div>
+        </div>
+   
+        <div class="w-full md:w-2/5">
+         <span class="text-blue-400 font-mono text-sm tracking-widest uppercase">Godot Development</span>
+         <h2 class="text-4xl font-black text-white mt-2 mb-6">Godot Game</h2>
+         <span class="text-blue-400 font-mono text-sm tracking-widest uppercase"> GdScript | IbisPaint </span>
+       
+         <p><br>I developed a 2D game in Godot to explore advanced game architecture and visual effects. I implemented a Finite State Machine (FSM) to handle complex character behaviors and used Singletons (Autoloads) for persistent global data management across levels. The project also features custom 2D Shaders for enhanced visuals, efficient Scene Management, and optimized Sprite Sheet animations to ensure smooth performance.</p>
+       </div>
+      </div>
+    </div>
+    
+    </div>
+  </section>
+
+  <section id="skills" class="py-24 px-6 bg-[#0b0f1a] border-t border-white/5">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-black text-white mb-4">Technical Toolkit</h2>
+        <p class="text-slate-400">The languages, frameworks, and tools I use to bring ideas to life.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-8 rounded-3xl bg-slate-900/40 border border-white/10 hover:border-blue-500/50 transition-all group">
+          <div class="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-code text-2xl text-blue-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">Programming</h3>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li>• Python & C++</li>
+            <li>• VB.NET</li>
+            <li>• GDScript (Godot)</li>
+            <li>• JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-slate-900/40 border border-white/10 hover:border-emerald-500/50 transition-all group">
+          <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-globe text-2xl text-emerald-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">Web Stack</h3>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li>• PHP (CodeIgniter)</li>
+            <li>• Tailwind & Bootstrap</li>
+            <li>• HTML5 & CSS3</li>
+            <li>• MVC Architecture</li>
+          </ul>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-slate-900/40 border border-white/10 hover:border-orange-500/50 transition-all group">
+          <div class="w-12 h-12 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-database text-2xl text-orange-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">Data Systems</h3>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li>• SQL (MySQL)</li>
+            <li>• JSON & CSV Handling</li>
+            <li>• Relational Databases</li>
+            <li>• Data Integration</li>
+          </ul>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-slate-900/40 border border-white/10 hover:border-purple-500/50 transition-all group">
+          <div class="w-12 h-12 bg-purple-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-screwdriver-wrench text-2xl text-purple-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">Productivity</h3>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li>• MS Office Applications</li>
+            <li>• Computer Literacy</li>
+            <li>• IbisPaint (Art)</li>
+            <li>• Version Control</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 px-6 bg-[#0b0f1a] border-t border-white/5">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-black text-white mb-6 italic tracking-tighter">Get In Touch</h2>
+      <p class="text-slate-400 mb-12">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+      
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="milzoncoyne@gmail.com" class="flex items-center gap-3 px-8 py-4 bg-slate-900 rounded-2xl border border-white/10 hover:border-blue-500/50 transition-all group">
+          <i class="fa-solid fa-envelope text-blue-400 group-hover:scale-125 transition-transform"></i>
+          <span class="text-white font-bold">Email Me</span>
+        </a>
+        <a href="https://www.linkedIn.com/in/coyne-milzon-l-938027324" class="flex items-center gap-3 px-8 py-4 bg-slate-900 rounded-2xl border border-white/10 hover:border-blue-400/50 transition-all group">
+          <i class="fa-brands fa-linkedin text-blue-400 group-hover:scale-125 transition-transform"></i>
+          <span class="text-white font-bold">LinkedIn</span>
+        </a>
+        <a href="https://github.com/x8000x" class="flex items-center gap-3 px-8 py-4 bg-slate-900 rounded-2xl border border-white/10 hover:border-slate-400/50 transition-all group">
+          <i class="fa-brands fa-github text-white group-hover:scale-125 transition-transform"></i>
+          <span class="text-white font-bold">GitHub</span>
+        </a>
+      </div>
+      
+      <footer class="mt-24 text-slate-500 text-sm">
+        &copy; 2026 Dev Portfolio. Built with Tailwind CSS & Font Awesome.
+      </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
